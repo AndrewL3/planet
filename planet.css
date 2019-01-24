@@ -1,0 +1,244 @@
+/* The CSS about the modal and the dropdown buttons were taken from W3Schools and modified. I used my prior knowledge of HTML and CSS and used the code as a template, and added/took away things to fit what I needed.*/
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+html body {
+    background: url("Images!!!1/space.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 45%;
+}
+
+.modalStyle .btn {
+    background-color: #008CBA;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    height: 60px;
+    width: 110px;
+    margin:auto;
+    top:50px;
+}
+
+.show {
+    display: block !important;
+}
+
+.left-content, .center-content, .right-content {
+    height:100%;
+    width:33%;
+    position: relative;
+    display: block;
+    margin: 0px;
+    float:left;
+}
+
+.right-content p {
+    color: crimson;
+}
+
+
+.center-content .comparison-content {
+    color:white;
+    text-align: center;
+    margin-top: 100px;
+    line-height: 50px;
+    font-family: sans-serif;
+    
+}
+
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+
+
+
+.dropdown {
+    position: relative;
+    display: block;
+    text-align: center; 
+    
+}
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content button {
+    width:100px;
+    margin: 5px 8px;
+    font-family: sans-serif;
+    
+}
+
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.modalStyle .btn:hover {
+    background-color: #0033BA;
+    color: white;
+}
+
+.modalStyle .modal-content {
+    display: block;
+    margin-left: 200px;
+    margin-right: auto;
+    margin-top: 100px;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-style: none;
+}
+
+
+
+.container img {
+    float: left;
+    margin: 5px 8px;
+}
+
+
+}
+#myImg:hover {
+    opacity: 0.7;
+}
+img {
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modalStyle {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    
+}
+
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    clear: both;
+    pointer-events: none;
+    border-style: none;
+}
+
+.modalStyle .left-content .img1 {
+    width:1000px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.data {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    line-height: 100px;
+    font-family: sans-serif;
+}
+
+/* Add Animation - Zoom in the Modal */
+.data {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    
+    to {
+        transform: scale(1)
+    }
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+}
